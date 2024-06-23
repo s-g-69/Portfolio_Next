@@ -9,7 +9,7 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
 ABOUT PAGE:
 
 - Passion Fuels Purpose! 
-- Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
+- Hi, I'm SahilGupta, a web developer and UI/UX designer with a passion for creating beautiful, functional, 
 and user-centered digital experiences. With 4 years of experience in the field. I am always looking for 
 new and innovative ways to bring my clients' visions to life.
 
