@@ -47,7 +47,7 @@ export default function Home() {
 
               <p className='my-4 text-base font-medium md:text-sm sm:text-sm'>
                 As a seasoned full-stack developer I turn visions to Virtual Reality.
-                Building tomorrow's Web with React.JS, Next.JS and beyond. Discover my portfolio of innovation.
+                Building tomorrow&apos;s Web with React.JS, Next.JS and beyond. Discover my portfolio of innovation.
               </p>
 
               <div className='flex items-center self-start mt-2 lg:self-center'>
