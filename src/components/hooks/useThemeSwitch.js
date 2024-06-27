@@ -8,7 +8,7 @@ const useThemeSwitch = () => {
         if (typeof window !== "undefined") {
             const userPref = window.localStorage.getItem("theme");
             const mediaQuery = window.matchMedia(preferDarkQuery);
-            const currentMode = userPref || (mediaQuery.matches ? "dark" : "light");
+            const currentMode = userPref || (mediaQuery.matches ? "light" : "dark");
             setMode(currentMode);
 
             if (currentMode === "dark") {

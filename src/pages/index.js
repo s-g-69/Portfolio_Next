@@ -6,7 +6,6 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
-import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import TransitionsEffect from '@/components/TransitionsEffect'
 
 
@@ -28,12 +27,12 @@ export default function Home() {
           <div className='flex items-center justify-between w-full lg:flex-col'>
 
             <div className='w-1/2 md:w-full p-14'>
-              <Image src={profilePic} alt='Devloper'
-                className='w-full h-auto lg:hidden md:inline-block md:w-full rounded-3xl'
+              <Image
+                src={profilePic}
                 priority
-                sizes="(max-width: 768px) 100vw,
-                        (max-width: 1200px) 50vw,
-                        50vw"
+                alt="Developer"
+                className="w-auto h-auto lg:hidden md:inline-block md:w-full rounded-3xl"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
 

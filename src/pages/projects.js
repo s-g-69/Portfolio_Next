@@ -21,10 +21,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github, technologies
     return (
         <article
             className='w-full flex items-center justify-between
-            rounded-3xl border border-solid border-dark dark:border-light
-            bg-light dark:bg-dark shadow-2xl p-12 dark:text-light
-            hover:border-none
-            hover:shadow-xl hover:shadow-dark hover:duration-200 dark:hover:shadow-light
+            rounded-3xl bg-light shadow-xl p-12 shadow-dark
+            hover:duration-200 hover:shadow-primary hover:shadow-2xl
+            dark:shadow-light dark:bg-dark dark:text-light dark:hover:shadow-primaryDark
             lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
         >
 
@@ -34,6 +33,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github, technologies
                 <FramerImage src={img} alt={title} className='w-full h-auto'
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 />
             </Link>
 
@@ -85,11 +86,10 @@ const Project = ({ title, type, img, link, github, technologies }) => {
     return (
         <article
             className='w-full flex flex-col items-center justify-center rounded-2xl
-            border border-solid border-dark bg-light p-6
-            dark:border-light dark:bg-dark dark:text-light
-            hover:border-none
-            hover:shadow-xl hover:shadow-dark hover:duration-200
-            dark:hover:shadow-light xs:p-4'
+                    bg-light p-6 shadow-xl shadow-dark                     
+                    hover:shadow-primary hover:shadow-2xl hover:duration-200
+                    dark:shadow-light xs:p-4 dark:bg-dark dark:text-light
+                    dark:hover:shadow-primaryDark'
         >
             <Link href={link} target="_blank"
                 className='w-full cursor-pointer overflow-hidden rounded-lg'
@@ -173,7 +173,7 @@ const projects = () => {
                                 img={FP1}
                                 link={"https://github.com/s-g-69/dream_nest_project/tree/master"}
                                 github={"https://github.com/s-g-69/dream_nest_project/tree/master"}
-                                technologies={["React" , "Node" , "MongoDB", "Express" , "MUI" , "JWT"]}
+                                technologies={["React", "Redux", "Node", "JWT", "Express", "MUI", "MongoDB"]}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
@@ -183,7 +183,7 @@ const projects = () => {
                                 img={PJ1}
                                 link={"/"}
                                 github={"/"}
-                                technologies={["React" , "Node" , "Express" , "JWT" , "MUI" , "OpenAI API"]}
+                                technologies={["React", "Node", "Express", "JWT", "MUI", "OpenAI API"]}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
@@ -193,7 +193,7 @@ const projects = () => {
                                 img={PJ2}
                                 link={"https://www.thehaweliresorts.in"}
                                 github={"https://www.thehaweliresorts.in"}
-                                technologies={["React" , "Redux" , "Tailwind"]}
+                                technologies={["React", "Redux", "Tailwind"]}
                             />
                         </div>
 
@@ -208,7 +208,7 @@ const projects = () => {
                                 img={FP2}
                                 link={"https://github.com/s-g-69/Simple_Raytracer_Cpp"}
                                 github={"https://github.com/s-g-69/Simple_Raytracer_Cpp"}
-                                technologies={["C++" , "C++ STL"]}
+                                technologies={["C++", "C++ STL"]}
                             />
                         </div>
                         {/* <div className='col-span-6 sm:col-span-12'>
